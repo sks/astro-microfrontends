@@ -11,7 +11,7 @@ This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do clie
 ## Usage
 
 - Build each microfrontend with `npm run build`
-- Start each microfrontend with `node server.js`
+- Start each microfrontend with `cd dist && http-server -p <PORT> --cors`
 - Start the shell with `npm run dev`
 
 ## Shared dependencies

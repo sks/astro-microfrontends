@@ -8,7 +8,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "dockerize": "docker build -t shell:latest .",
+    "docker:run": "docker run --rm -p 3000:80 shell:latest"
   },
   "dependencies": {
     "@astrojs/react": "2.0.0",

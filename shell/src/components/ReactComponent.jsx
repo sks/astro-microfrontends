@@ -8,7 +8,11 @@ const mountpointB = "microfrontend-b";
 const ReactComponent = () => {
 
   useEffect(() => {
-    injectMicroFrontendA(mountpointA);
+    try{
+      injectMicroFrontendA(mountpointA);
+    }catch(e){
+      console.log(e)
+    }
     injectMicroFrontendB(mountpointB);
   }, []);
 

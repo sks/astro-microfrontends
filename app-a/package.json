@@ -6,7 +6,9 @@
     "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "dockerize": "docker build -t appa:latest .",
+    "docker:run": "docker run --rm -p 7100:80 appa:latest"
   },
   "dependencies": {
     "react": "18.2.0",
